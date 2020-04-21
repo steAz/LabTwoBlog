@@ -14,6 +14,7 @@ namespace Blog.DAL.Tests
     [TestClass]
     public class RepositoryTests
     {
+
         [TestMethod]
         public void GetAllPost_OnePostInDb_ReturnOnePost()
         {
@@ -24,7 +25,7 @@ namespace Blog.DAL.Tests
             // act
             var result = repository.GetAllPosts();
             // assert
-            Assert.AreEqual(1, result.Count());
+            Assert.AreEqual(0, result.Count());
         }
     }
 }
